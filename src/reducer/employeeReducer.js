@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { employeeService } from '../services/employee/employeeService'
 
 const employeeList = localStorage.getItem('employeeList')
@@ -12,15 +12,17 @@ const initialState = {
   success: false
 }
 
-export const addEmployee = (employee) => async (dispatch) => {
-  try {
-    dispatch(employeeService.addEmployee(employee))
-    dispatch(reset())
-  } catch (error) {
-    console.error('Error in employeeReducer.js', error)
-    throw new Error(error)
-  }
-}
+export const addEmployee = createAsyncThunk(
+    'employee/addEmployee',
+    async (employee, thunkAPI) => {
+      try {
+        return await employeeService.addEmployee(employee)
+      } catch (error) {
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
+        return thunkAPI.rejectWithValue(message)
+      }
+    }
+)
 
 const employeeSlice = createSlice({
   name: 'employee',

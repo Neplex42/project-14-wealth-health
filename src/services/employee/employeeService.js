@@ -1,9 +1,8 @@
-
-const addEmployee = () => {
-  // console.log('addEmployee')
+const addEmployee = (employee) => {
+  console.log('addEmployee', employee)
 }
 
 
 export const employeeService = {
-  addEmployee,
+  addEmployee
 }
