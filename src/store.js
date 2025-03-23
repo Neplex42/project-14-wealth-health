@@ -5,5 +5,9 @@ export default configureStore({
   reducer: {
     employee: employeeReducer
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
   devTools: true
 })

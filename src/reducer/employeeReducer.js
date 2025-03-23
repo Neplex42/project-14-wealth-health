@@ -1,9 +1,8 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { employeeService } from '../services/employee/employeeService'
+import { createSlice } from "@reduxjs/toolkit";
 
 const employeeList = localStorage.getItem('employeeList')
-    ? localStorage.getItem('employeeList')
-    : null
+    ? JSON.parse(localStorage.getItem('employeeList'))
+    : []
 
 const initialState = {
   employeeList,
@@ -11,18 +10,6 @@ const initialState = {
   error: null,
   success: false
 }
-
-export const addEmployee = createAsyncThunk(
-    'employee/addEmployee',
-    async (employee, thunkAPI) => {
-      try {
-        return await employeeService.addEmployee(employee)
-      } catch (error) {
-        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
-        return thunkAPI.rejectWithValue(message)
-      }
-    }
-)
 
 const employeeSlice = createSlice({
   name: 'employee',
@@ -32,26 +19,22 @@ const employeeSlice = createSlice({
       state.loading = false
       state.error = null
       state.success = false
+    },
+    addEmployee: (state, action) => {
+      state.loading = true
+      try {
+        state.employeeList.push(action.payload)
+        localStorage.setItem('employeeList', JSON.stringify(state.employeeList))
+        state.loading = false
+        state.success = true
+      } catch (error) {
+        state.loading = false
+        state.error = error
+      }
     }
-  },
-  extraReducers: (builder) => {
-    builder
-        .addCase(addEmployee.pending, (state) => {
-          state.loading = true
-          state.error = null
-        })
-        .addCase(addEmployee.fulfilled, (state, action) => {
-          state.loading = false
-          state.employeeList = action.payload
-          state.success = true
-        })
-        .addCase(addEmployee.rejected, (state, {payload}) => {
-          state.loading = false
-          state.error = payload
-        })
   }
 })
 
-export const {reset} = employeeSlice.actions
+export const {reset, addEmployee} = employeeSlice.actions
 
 export default employeeSlice.reducer
