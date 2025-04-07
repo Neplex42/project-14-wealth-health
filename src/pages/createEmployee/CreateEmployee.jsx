@@ -6,8 +6,7 @@ import { useEffect, useState } from "react";
 import FormCreateEmployee from "../../components/formCreateEmployee/FormCreateEmployee.jsx";
 import { Link } from "react-router-dom";
 import 'react-datepicker/dist/react-datepicker.css'
-import SuccessModal from "success-modal-oc/dist/successModal.js";
-import useMountTransition from "success-modal-oc/dist/useMountTransition.js";
+import { SuccessModal, useMountTransition } from 'success-modal-oc-jd';
 
 const CreateEmployee = () => {
   const dispatch = useDispatch();
