@@ -1,0 +1,26 @@
+.input {
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    .react-datepicker__view-calendar-icon {
+        input {
+            padding: 10px 10px 10px 30px;
+        }
+
+        .react-datepicker__calendar-icon {
+            padding: 0.65rem 0.5rem;
+        }
+    }
+}
