@@ -1,0 +1,616 @@
+  // You can use this file to seed localStore with data
+
+[
+  {
+    "first-name": "Sophie",
+    "last-name": "Lefevre",
+    "date-of-birth": "2023-02-15T22:00:00.000Z",
+    "start-date": "2023-11-01T23:00:00.000Z",
+    "street": "14 avenue des Roses",
+    "city": "Paris",
+    "state": {
+      "name": "Iowa",
+      "abbreviation": "IA"
+    },
+    "zip-code": "75001",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    }
+  },
+  {
+    "first-name": "Lucas",
+    "last-name": "Perrin",
+    "date-of-birth": "2023-07-20T22:00:00.000Z",
+    "start-date": "2023-09-10T23:00:00.000Z",
+    "street": "25 rue de la Liberté",
+    "city": "Lyon",
+    "state": {
+      "name": "Maine",
+      "abbreviation": "ME"
+    },
+    "zip-code": "69002",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Alicia",
+    "last-name": "Dubois",
+    "date-of-birth": "2023-05-12T22:00:00.000Z",
+    "start-date": "2023-10-05T23:00:00.000Z",
+    "street": "7 rue de la Paix",
+    "city": "Marseille",
+    "state": {
+      "name": "Montana",
+      "abbreviation": "MT"
+    },
+    "zip-code": "13001",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Hugo",
+    "last-name": "Leroux",
+    "date-of-birth": "2023-09-30T22:00:00.000Z",
+    "start-date": "2023-12-15T23:00:00.000Z",
+    "street": "42 avenue du Soleil",
+    "city": "Nice",
+    "state": {
+      "name": "Nevada",
+      "abbreviation": "NV"
+    },
+    "zip-code": "06000",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Léa",
+    "last-name": "Girard",
+    "date-of-birth": "2023-12-10T22:00:00.000Z",
+    "start-date": "2024-01-02T23:00:00.000Z",
+    "street": "18 rue de la Gare",
+    "city": "Lille",
+    "state": {
+      "name": "Rhode Island",
+      "abbreviation": "RI"
+    },
+    "zip-code": "59000",
+    "department": {
+      "value": "IT",
+      "label": "IT"
+    }
+  },
+  {
+    "first-name": "Matteo",
+    "last-name": "Roux",
+    "date-of-birth": "2023-11-05T22:00:00.000Z",
+    "start-date": "2023-11-20T23:00:00.000Z",
+    "street": "33 avenue des Champs",
+    "city": "Strasbourg",
+    "state": {
+      "name": "South Carolina",
+      "abbreviation": "SC"
+    },
+    "zip-code": "67000",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Manon",
+    "last-name": "Lemoine",
+    "date-of-birth": "2023-03-25T22:00:00.000Z",
+    "start-date": "2023-05-10T23:00:00.000Z",
+    "street": "9 rue de la Forêt",
+    "city": "Bordeaux",
+    "state": {
+      "name": "Utah",
+      "abbreviation": "UT"
+    },
+    "zip-code": "33000",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Théo",
+    "last-name": "Gagnon",
+    "date-of-birth": "2023-08-18T22:00:00.000Z",
+    "start-date": "2023-09-01T23:00:00.000Z",
+    "street": "24 rue des Étoiles",
+    "city": "Toulouse",
+    "state": {
+      "name": "Vermont",
+      "abbreviation": "VT"
+    },
+    "zip-code": "31000",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    }
+  },
+  {
+    "first-name": "Camille",
+    "last-name": "Fournier",
+    "date-of-birth": "2023-06-08T22:00:00.000Z",
+    "start-date": "2023-08-01T23:00:00.000Z",
+    "street": "12 avenue des Lumières",
+    "city": "Rennes",
+    "state": {
+      "name": "Wyoming",
+      "abbreviation": "WY"
+    },
+    "zip-code": "35000",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Antoine",
+    "last-name": "Brunet",
+    "date-of-birth": "2023-10-12T22:00:00.000Z",
+    "start-date": "2023-10-20T23:00:00.000Z",
+    "street": "6 rue de la Renaissance",
+    "city": "Nantes",
+    "state": {
+      "name": "Missouri",
+      "abbreviation": "MO"
+    },
+    "zip-code": "44000",
+    "department": {
+      "value": "IT",
+      "label": "IT"
+    }
+  },
+  {
+    "first-name": "Emma",
+    "last-name": "Leroux",
+    "date-of-birth": "2023-01-22T22:00:00.000Z",
+    "start-date": "2023-03-01T23:00:00.000Z",
+    "street": "15 avenue de la Plage",
+    "city": "Cannes",
+    "state": {
+      "name": "North Dakota",
+      "abbreviation": "ND"
+    },
+    "zip-code": "06400",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Louis",
+    "last-name": "Vincent",
+    "date-of-birth": "2023-04-28T22:00:00.000Z",
+    "start-date": "2023-06-15T23:00:00.000Z",
+    "street": "21 rue du Paradis",
+    "city": "Montpellier",
+    "state": {
+      "name": "Oregon",
+      "abbreviation": "OR"
+    },
+    "zip-code": "34000",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Elise",
+    "last-name": "Maurin",
+    "date-of-birth": "2023-09-05T22:00:00.000Z",
+    "start-date": "2023-09-15T23:00:00.000Z",
+    "street": "8 avenue de la Fontaine",
+    "city": "Avignon",
+    "state": {
+      "name": "Virginia",
+      "abbreviation": "VA"
+    },
+    "zip-code": "84000",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Nathan",
+    "last-name": "Dupuis",
+    "date-of-birth": "2023-11-15T22:00:00.000Z",
+    "start-date": "2024-01-01T23:00:00.000Z",
+    "street": "30 rue des Arts",
+    "city": "Grenoble",
+    "state": {
+      "name": "West Virginia",
+      "abbreviation": "WV"
+    },
+    "zip-code": "38000",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    }
+  },
+  {
+    "first-name": "Lola",
+    "last-name": "Roy",
+    "date-of-birth": "2023-02-08T22:00:00.000Z",
+    "start-date": "2023-05-01T23:00:00.000Z",
+    "street": "11 avenue des Cèdres",
+    "city": "Nancy",
+    "state": {
+      "name": "Delaware",
+      "abbreviation": "DE"
+    },
+    "zip-code": "54000",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Mathis",
+    "last-name": "Caron",
+    "date-of-birth": "2023-10-02T22:00:00.000Z",
+    "start-date": "2023-11-15T23:00:00.000Z",
+    "street": "17 rue de la République",
+    "city": "Angers",
+    "state": {
+      "name": "Idaho",
+      "abbreviation": "ID"
+    },
+    "zip-code": "49000",
+    "department": {
+      "value": "IT",
+      "label": "IT"
+    }
+  },
+  {
+    "first-name": "Mia",
+    "last-name": "Lefevre",
+    "date-of-birth": "2023-07-10T22:00:00.000Z",
+    "start-date": "2023-08-01T23:00:00.000Z",
+    "street": "22 avenue de la Mer",
+    "city": "Le Havre",
+    "state": {
+      "name": "Minnesota",
+      "abbreviation": "MN"
+    },
+    "zip-code": "76600",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Maxime",
+    "last-name": "Blanc",
+    "date-of-birth": "2023-05-28T22:00:00.000Z",
+    "start-date": "2023-06-10T23:00:00.000Z",
+    "street": "14 rue de la Paix",
+    "city": "Rouen",
+    "state": {
+      "name": "New Hampshire",
+      "abbreviation": "NH"
+    },
+    "zip-code": "76000",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Inès",
+    "last-name": "Lemoine",
+    "date-of-birth": "2023-03-15T22:00:00.000Z",
+    "start-date": "2023-04-01T23:00:00.000Z",
+    "street": "19 avenue du Lac",
+    "city": "Brest",
+    "state": {
+      "name": "Oklahoma",
+      "abbreviation": "OK"
+    },
+    "zip-code": "29200",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Ethan",
+    "last-name": "Renaud",
+    "date-of-birth": "2023-11-18T22:00:00.000Z",
+    "start-date": "2024-01-05T23:00:00.000Z",
+    "street": "5 rue des Érables",
+    "city": "Dijon",
+    "state": {
+      "name": "South Dakota",
+      "abbreviation": "SD"
+    },
+    "zip-code": "21000",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    }
+  },
+  {
+    "first-name": "Louise",
+    "last-name": "Leroux",
+    "date-of-birth": "2023-08-30T22:00:00.000Z",
+    "start-date": "2023-09-15T23:00:00.000Z",
+    "street": "23 avenue des Vignes",
+    "city": "Limoges",
+    "state": {
+      "name": "Tennessee",
+      "abbreviation": "TN"
+    },
+    "zip-code": "87000",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Noah",
+    "last-name": "Martin",
+    "date-of-birth": "2023-04-12T22:00:00.000Z",
+    "start-date": "2023-05-01T23:00:00.000Z",
+    "street": "10 rue de la Rivière",
+    "city": "Clermont-Ferrand",
+    "state": {
+      "name": "Washington",
+      "abbreviation": "WA"
+    },
+    "zip-code": "63000",
+    "department": {
+      "value": "IT",
+      "label": "IT"
+    }
+  },
+  {
+    "first-name": "Jade",
+    "last-name": "Lefevre",
+    "date-of-birth": "2023-01-25T22:00:00.000Z",
+    "start-date": "2023-03-01T23:00:00.000Z",
+    "street": "16 avenue des Roses",
+    "city": "Toulon",
+    "state": {
+      "name": "Wisconsin",
+      "abbreviation": "WI"
+    },
+    "zip-code": "83000",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Liam",
+    "last-name": "Bergeron",
+    "date-of-birth": "2023-09-05T22:00:00.000Z",
+    "start-date": "2023-09-20T23:00:00.000Z",
+    "street": "31 rue du Moulin",
+    "city": "Perpignan",
+    "state": {
+      "name": "Connecticut",
+      "abbreviation": "CT"
+    },
+    "zip-code": "66000",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Zoé",
+    "last-name": "Roux",
+    "date-of-birth": "2023-06-28T22:00:00.000Z",
+    "start-date": "2023-08-15T23:00:00.000Z",
+    "street": "20 avenue de la Plage",
+    "city": "Besançon",
+    "state": {
+      "name": "Florida",
+      "abbreviation": "FL"
+    },
+    "zip-code": "25000",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Gabriel",
+    "last-name": "Lemoine",
+    "date-of-birth": "2023-10-10T22:00:00.000Z",
+    "start-date": "2023-11-01T23:00:00.000Z",
+    "street": "11 rue de la Forêt",
+    "city": "Metz",
+    "state": {
+      "name": "Indiana",
+      "abbreviation": "IN"
+    },
+    "zip-code": "57000",
+    "department": {
+      "value": "Sales",
+      "label": "Sales"
+    }
+  },
+  {
+    "first-name": "Chloé",
+    "last-name": "Fournier",
+    "date-of-birth": "2023-02-18T22:00:00.000Z",
+    "start-date": "2023-05-01T23:00:00.000Z",
+    "street": "13 avenue des Lumières",
+    "city": "Nîmes",
+    "state": {
+      "name": "Kansas",
+      "abbreviation": "KS"
+    },
+    "zip-code": "30000",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Leo",
+    "last-name": "Martin",
+    "date-of-birth": "2023-12-08T22:00:00.000Z",
+    "start-date": "2024-01-01T23:00:00.000Z",
+    "street": "25 rue des Étoiles",
+    "city": "Valence",
+    "state": {
+      "name": "Maryland",
+      "abbreviation": "MD"
+    },
+    "zip-code": "26000",
+    "department": {
+      "value": "IT",
+      "label": "IT"
+    }
+  },
+  {
+    "first-name": "Anna",
+    "last-name": "Renaud",
+    "date-of-birth": "2023-07-22T22:00:00.000Z",
+    "start-date": "2023-09-10T23:00:00.000Z",
+    "street": "14 avenue de la Fontaine",
+    "city": "Angoulême",
+    "state": {
+      "name": "Michigan",
+      "abbreviation": "MI"
+    },
+    "zip-code": "16000",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Oscar",
+    "last-name": "Blanc",
+    "date-of-birth": "2023-05-30T22:00:00.000Z",
+    "start-date": "2023-06-15T23:00:00.000Z",
+    "street": "9 rue de la Mer",
+    "city": "Pau",
+    "state": {
+      "name": "Mississippi",
+      "abbreviation": "MS"
+    },
+    "zip-code": "64000",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Juliette",
+    "last-name": "Maurin",
+    "date-of-birth": "2023-09-28T22:00:00.000Z",
+    "start-date": "2023-10-15T23:00:00.000Z",
+    "street": "32 avenue du Lac",
+    "city": "Tarbes",
+    "state": {
+      "name": "Nebraska",
+      "abbreviation": "NE"
+    },
+    "zip-code": "65000",
+    "department": {
+      "value": "Finance",
+      "label": "Finance"
+    }
+  },
+  {
+    "first-name": "Fabien",
+    "last-name": "Chareun",
+    "date-of-birth": "2023-04-05T22:00:00.000Z",
+    "start-date": "2023-12-05T23:00:00.000Z",
+    "street": "9 rue du grand clos",
+    "city": "Saint Laurent de Mure",
+    "state": {
+      "name": "Alaska",
+      "abbreviation": "AK"
+    },
+    "zip-code": "69720",
+    "department": {
+      "value": "Marketing",
+      "label": "Marketing"
+    }
+  },
+  {
+    "first-name": "Ivor",
+    "last-name": "Travis",
+    "date-of-birth": "2023-12-06T23:00:00.000Z",
+    "start-date": "2024-01-01T23:00:00.000Z",
+    "street": "Nemo accusamus a dic",
+    "city": "Sint ipsum aliqua P",
+    "state": {
+      "name": "American Samoa",
+      "abbreviation": "AS"
+    },
+    "zip-code": "61566",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Kaitlin",
+    "last-name": "Rivera",
+    "date-of-birth": "2023-11-27T23:00:00.000Z",
+    "start-date": "2023-11-27T23:00:00.000Z",
+    "street": "Possimus officia of",
+    "city": "Et quod qui ipsum e",
+    "state": {
+      "name": "Alaska",
+      "abbreviation": "AK"
+    },
+    "zip-code": "11446",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  },
+  {
+    "first-name": "Branden",
+    "last-name": "Eaton",
+    "date-of-birth": "2023-12-25T23:00:00.000Z",
+    "start-date": "2023-12-07T23:00:00.000Z",
+    "street": "Debitis quod asperna",
+    "city": "Qui autem officia si",
+    "state": {
+      "name": "Marshall Islands",
+      "abbreviation": "MH"
+    },
+    "zip-code": "70381",
+    "department": {
+      "value": "Human Resources",
+      "label": "Human Resources"
+    }
+  },
+  {
+    "first-name": "Herman",
+    "last-name": "Gilliam",
+    "date-of-birth": "2023-11-28T23:00:00.000Z",
+    "start-date": "2023-11-25T23:00:00.000Z",
+    "street": "Ipsum omnis dolor in",
+    "city": "Assumenda ut duis es",
+    "state": {
+      "name": "Kentucky",
+      "abbreviation": "KY"
+    },
+    "zip-code": "54816",
+    "department": {
+      "value": "Legal",
+      "label": "Legal"
+    }
+  }
+]

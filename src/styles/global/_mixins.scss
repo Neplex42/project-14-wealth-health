@@ -9,7 +9,7 @@
 // media queries
 @mixin media-up($breakpoint, $value : 0) {
   @if $breakpoint == xs {
-    @media only screen and (min-width: 430px) {
+    @media only screen and (min-width: 450px) {
       @content;
     }
   }
